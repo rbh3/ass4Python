@@ -68,13 +68,13 @@ class gui:
             # pic 1
             picPath1=r'./scatterPlot.gif'
             pic1=PhotoImage(file=picPath1)
-            self.imageLabel=Label(image=pic1, width='400px', height='400px')
+            self.imageLabel=Label(image=pic1, width='600px', height='600px')
             self.imageLabel.image = pic1
             self.imageLabel.grid(row=4, column=1, sticky=W)
             # pic2
             picPath2 = r'./map.gif'
             pic2=PhotoImage(file=picPath2)
-            self.imageLabe2=Label(image=pic2, width='600px', height='400px')
+            self.imageLabe2=Label(image=pic2, width='600px', height='600px')
             self.imageLabe2.image = pic2
             self.imageLabe2.grid(row=4, column=2, sticky=E)
             #finish msg

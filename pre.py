@@ -46,11 +46,13 @@ class model:
         self.df['Cluster'] = clst
 
         # Scatter plot
-        plt.scatter(x=self.df['Social support'], y=self.df['Generosity'], c=self.df['Cluster'])
+        m=plt.scatter(x=self.df['Social support'], y=self.df['Generosity'], c=self.df['Cluster'])
         plt.xlabel("Social Support")
         plt.ylabel("Generosity")
         plt.title("Generosity depends on Social Support")
+        plt.colorbar(m)
         plt.savefig("scatterPlot.png")
+
         im = Image.open("scatterPlot.png")
         im = im.convert('RGB').convert('P', palette=Image.ADAPTIVE)
         im.save('scatterPlot.gif')
